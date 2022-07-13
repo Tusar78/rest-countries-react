@@ -1,0 +1,19 @@
+/* Single Country design */
+.country {
+  border: 1px solid var(--first-color);
+  border-radius: .5rem;
+  padding: var(--mb-1);
+}
+
+.country__flag {
+  width: 295px;
+  height: 175px;
+  border-radius: .5rem;
+}
+
+.country__name {
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  margin-top: var(--mb-1);
+  color: var(--first-color);
+}
