@@ -1,0 +1,41 @@
+/* Header design */
+.header {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+
+.nav {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--mb-0-5);
+  padding-bottom: var(--mb-0-5);
+}
+
+.nav__logo {
+  color: var(--first-color);
+}
+
+.nav__list {
+  margin-top: var(--mb-0-5);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+}
+
+@media screen and (min-width: 576px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__list {
+    margin-top: 0;
+  }
+}
